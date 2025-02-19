@@ -1,6 +1,6 @@
 **Documentation**
 
-User authentication and authorizationimplementation.
+User authentication and authorization implementation.
 
 **TechStack**
 
