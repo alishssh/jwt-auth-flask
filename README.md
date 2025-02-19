@@ -40,6 +40,9 @@ jwt-auth-flask/
 
 │── README.md        # (Project documentation)
 
+
+
+
 **Step-By-StepImplementation**
 
 1.    Create your models in models.py
@@ -91,6 +94,9 @@ classProduct(db.Model):
     name = db.Column(db.String(100),nullable=False)
 
     price = db.Column(db.Float, nullable=False)
+
+
+    
 
 2.     _Initializeimports for app in \_\_init\_\_.py_
 
@@ -146,6 +152,9 @@ defcreate\_app():
 
                            return app
 
+
+                           
+
 3.     _Createyour apps to run routes in app.py_
 
 fromflask import Flask
@@ -157,6 +166,9 @@ app= create\_app()
 if\_\_name\_\_ == '\_\_main\_\_':
 
     app.run(debug=True)
+
+
+    
 
 4.     _Createconfigurations in config.py_
 
@@ -179,6 +191,9 @@ classConfig:
     JWT\_ACCESS\_TOKEN\_EXPIRES = 3600
 
     Debug = True
+
+
+    
 
 5.     _CreateRoutes in routes.py for admin and user for GET and POST request_
 
